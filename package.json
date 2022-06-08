@@ -3,9 +3,18 @@
   "version": "0.0.1",
   "description": "Unit testing task",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test-coverage": "jest --coverage"
   },
   "devDependencies": {
     "jest": "^28.1.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "json",
+      "html"
+    ],
+    "globalSetup": "./global-setup.js"
   }
 }
