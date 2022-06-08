@@ -132,4 +132,26 @@ describe("The language is set to english", () => {
   it("should throw typeerror when non valid date", () => {
     expect(() => unitTestingTask("ZZ", null)).toThrow(TypeError);
   });
+
+  it("should format date to time-zone without receiving a date", () => {
+    expect(unitTestingTask("ZZ")).toBe("+0000");
+  });
+
+  it("should format date to am meridian", () => {
+    expect(
+      unitTestingTask("a", new Date("June 17, 2022 9:24:12 GMT-0000"))
+    ).toBe("am");
+  });
+
+  it("should format hour to mid day", () => {
+    expect(
+      unitTestingTask("h", new Date("June 17, 2022 12:24:12 GMT-0000"))
+    ).toBe("12");
+  });
+
+  it("should format hour to mid day", () => {
+    expect(
+      unitTestingTask("hh", new Date("June 17, 2022 12:24:12 GMT-0000"))
+    ).toBe("12");
+  });
 });
