@@ -10,7 +10,7 @@ const uk = require("../lang/uk.js");
 
 let testDate = new Date("June 17, 2022 17:24:12 GMT-0500");
 
-describe("Date formating be", () => {
+describe("The language is set to be", () => {
   beforeAll(() => unitTestingTask.lang("be", be));
   it("should format date to full name of month", () => {
     expect(unitTestingTask("MMMM", testDate)).toBe("чэрвень");
@@ -26,7 +26,7 @@ describe("Date formating be", () => {
   });
 });
 
-describe("Date formating cs", () => {
+describe("The language is set to cs", () => {
   beforeAll(() => unitTestingTask.lang("cs", cs));
   it("should format date to full name of month", () => {
     expect(unitTestingTask("MMMM", testDate)).toBe("červen");
@@ -42,7 +42,7 @@ describe("Date formating cs", () => {
   });
 });
 
-describe("Date formating kk", () => {
+describe("The language is set to kk", () => {
   beforeAll(() => unitTestingTask.lang("kk", kk));
   it("should format date to full name of month", () => {
     expect(unitTestingTask("MMMM", testDate)).toBe("маусым");
@@ -55,7 +55,7 @@ describe("Date formating kk", () => {
   });
 });
 
-describe("Date formating pl", () => {
+describe("The language is set to pl", () => {
   beforeAll(() => unitTestingTask.lang("pl", pl));
   it("should format date to full name of month", () => {
     expect(unitTestingTask("MMMM", testDate)).toBe("czerwiec");
@@ -71,7 +71,7 @@ describe("Date formating pl", () => {
   });
 });
 
-describe("Date formating ru", () => {
+describe("The language is set to ru", () => {
   beforeAll(() => unitTestingTask.lang("ru", ru));
   it("should format date to full name of month", () => {
     expect(unitTestingTask("MMMM", testDate)).toBe("июнь");
@@ -87,7 +87,7 @@ describe("Date formating ru", () => {
   });
 });
 
-describe("Date formating tr", () => {
+describe("The language is set to tr", () => {
   beforeAll(() => unitTestingTask.lang("tr", tr));
   it("should format date to full name of month", () => {
     expect(unitTestingTask("MMMM", testDate)).toBe("Haziran");
@@ -100,7 +100,7 @@ describe("Date formating tr", () => {
   });
 });
 
-describe("Date formating tt", () => {
+describe("The language is set to tt", () => {
   beforeAll(() => unitTestingTask.lang("tt", tt));
   it("should format date to full name of month", () => {
     expect(unitTestingTask("MMMM", testDate)).toBe("июнь");
@@ -113,7 +113,7 @@ describe("Date formating tt", () => {
   });
 });
 
-describe("Date formating uk", () => {
+describe("The language is set to uk", () => {
   beforeAll(() => unitTestingTask.lang("uk", uk));
   it("should format date to full name of month", () => {
     expect(unitTestingTask("MMMM", testDate)).toBe("червень");

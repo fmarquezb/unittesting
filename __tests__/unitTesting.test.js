@@ -8,7 +8,7 @@ describe("Timezones", () => {
   });
 });
 
-describe("Date formating english", () => {
+describe("The language is set to english", () => {
   it("should format date to 4 digit year", () => {
     expect(unitTestingTask("YYYY", testDate)).toBe("2022");
   });
